@@ -8,10 +8,11 @@ talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-stat
 
 ### Esprima Examples
 
-`checkstyle.coffee` and `logging.coffee` contain the original source code for
-the style checker and logging examples presented in the talk. `checkstyle.js`
-and `logging.js` are the slightly simplified JS versions that were shown in
+* `checkstyle.coffee` and `logging.coffee` contain the original source code for
+the style checker and logging examples presented in the talk. 
+* `checkstyle.js` and `logging.js` are the slightly simplified JS versions that were shown in
 the talk.
+* `syntax-highlight.js` is taken from the Esprima tutorial [Chapter 3. Lexical Analysis (Tokenization)¶](http://esprima.readthedocs.io/en/latest/lexical-analysis.html)
 
 ### PEG.js Example
 
