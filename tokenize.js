@@ -1,3 +1,8 @@
+const util = require('util');
 var esprima = require('esprima');
-const tokens = esprima.tokenize('answer = 42', { range: true })
-console.log(tokens);
+const tokens = esprima.tokenize('answer = /* cuarenta y dos */ 42', {
+    range: true,
+    loc: true,
+    comment: true
+})
+console.log(util.inspect(tokens, { depth: Math.Infinity }));
