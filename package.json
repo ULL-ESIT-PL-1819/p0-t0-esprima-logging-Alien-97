@@ -3,6 +3,7 @@
     "author": "Patrick Dubroy <pdubroy@gmail.com>",
     "scripts": {
         "sh": "node --inspect-brk syntax-highlight.js",
+        "grep": "node --inspect-brk idgrep.js",
         "log": "node --inspect-brk logging.js"
     },
     "dependencies": {
