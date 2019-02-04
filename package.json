@@ -7,6 +7,7 @@
         "log": "node --inspect-brk logging.js"
     },
     "dependencies": {
+        "acorn": "^6.0.7",
         "escodegen": "^1.11.0",
         "escope": "^3.6.0",
         "espree": "^5.0.0",
