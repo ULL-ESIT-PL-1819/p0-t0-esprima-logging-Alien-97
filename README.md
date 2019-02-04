@@ -23,3 +23,55 @@ presented in the second half of the talk.
 
 `idgrep.coffee` (and `idgrep.js`) is another example of using Esprima
 to do static analysis on JavaScript code.
+
+### REPL example
+
+```js
+> esprima = require('esprima')
+{ parse: [Function: parse],
+  parseModule: [Function: parseModule],
+  parseScript: [Function: parseScript],
+  tokenize: [Function: tokenize],
+  Syntax: 
+   { ... },
+  version: '4.0.1' }
+
+> esprima.tokenize('answer = 42', { range: true })
+[ { type: 'Identifier', value: 'answer', range: [ 0, 6 ] },
+  { type: 'Punctuator', value: '=', range: [ 7, 8 ] },
+  { type: 'Numeric', value: '42', range: [ 9, 11 ] } ]
+
+> esprima.parseScript('const answer = 42', { tokens: true })
+Script {
+  type: 'Program',
+  body: 
+   [ VariableDeclaration {
+       type: 'VariableDeclaration',
+       declarations: [Array],
+       kind: 'const' } ],
+  sourceType: 'script',
+  tokens: 
+   [ { type: 'Keyword', value: 'const' },
+     { type: 'Identifier', value: 'answer' },
+     { type: 'Punctuator', value: '=' },
+     { type: 'Numeric', value: '42' } ] }
+
+> inspect = require('util')
+{ ... }
+
+> console.log(util.inspect(esprima.parseScript('answer = 42'), {depth: null}))
+Script {
+  type: 'Program',
+  body: 
+   [ ExpressionStatement {
+       type: 'ExpressionStatement',
+       expression: 
+        AssignmentExpression {
+          type: 'AssignmentExpression',
+          operator: '=',
+          left: Identifier { type: 'Identifier', name: 'answer' },
+          right: Literal { type: 'Literal', value: 42, raw: '42' } } } ],
+  sourceType: 'script' }
+undefined
+> 
+```

@@ -2,8 +2,8 @@
 	"name": "jsconfeu-talk",
 	"author": "Patrick Dubroy <pdubroy@gmail.com>",
 	"dependencies": {
-		"escodegen": ">= 0.0.26",
-		"esprima": ">= 1.0.3",
+		"escodegen": "^1.11.0",
+		"esprima": "^4.0.1",
 		"estraverse": ">= 1.3.0",
 		"pegjs": ">= 0.7.0",
 		"readline": "^1.3.0",
