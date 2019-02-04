@@ -2,7 +2,8 @@
     "name": "jsconfeu-talk",
     "author": "Patrick Dubroy <pdubroy@gmail.com>",
     "scripts": {
-        "sh": "node --inspect-brk syntax-highlight.js"
+        "sh": "node --inspect-brk syntax-highlight.js",
+        "log": "node --inspect-brk logging.js"
     },
     "dependencies": {
         "escodegen": "^1.11.0",
