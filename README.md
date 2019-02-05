@@ -9,11 +9,15 @@ talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-stat
 
 ## Master the Art of the AST and Take Control of Your JS
 
-See also the video [Master the Art of the AST and Take Control of Your JS][ast].
+See also the video [Master the Art of the AST and Take Control of Your JS][ast]. 
+[Here are the slides](ast-talk-codemotion-170406094223.pdf)
 
 * <a href="https://astexplorer.net/" target="_blank">astexplorer.net demo</a>
 * <a href="https://eslint.org/docs/developer-guide/working-with-plugins" target="_blank">ESLint: Working with Plugins</a>
-* <a href="https://github.com/cowchimp/eslint-plugin-piggyback" target="_blank"eslint-plugin-piggyback</a>
+* <a href="https://github.com/cowchimp/eslint-plugin-piggyback" target="_blank">eslint-plugin-piggyback</a>
+
+* <a href="http://docs.w3cub.com/babel/plugins/transform-remove-debugger/" target="_blank">Babel plugin Remove debugger transform. This plugin removes all `debugger;` statements</a>
+* <a href="https://github.com/babel/minify/tree/a24dd066f16db5a7d5ab13c2af65e767347ef550/packages/babel-plugin-transform-remove-debugger" target="_blank">babel-plugin-transform-remove-debugger at GitHub</a>
 
 [ast]: https://youtu.be/C06MohLG_3s
 
