@@ -4,7 +4,8 @@
     "scripts": {
         "sh": "node --inspect-brk syntax-highlight.js",
         "grep": "node --inspect-brk idgrep.js",
-        "log": "node --inspect-brk logging.js"
+        "log": "node --inspect-brk logging.js",
+        "publish": "git ci -am modified && git push origin master"
     },
     "dependencies": {
         "acorn": "^6.0.7",
