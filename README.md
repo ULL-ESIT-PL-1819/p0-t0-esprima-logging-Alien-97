@@ -9,10 +9,9 @@ talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-stat
 
 ## Master the Art of the AST and Take Control of Your JS
 
-See also the video [Master the Art of the AST and Take Control of Your JS][ast]. 
-
-Here is another version of the talk at Javascript Israel](https://500tech.com/blog/all/yonatan-mevorach-on-abstract-syntax-trees) 
-[Here are the slides](ast-talk-codemotion-170406094223.pdf)
+* See also the video [Master the Art of the AST and Take Control of Your JS][ast]. 
+* [Here is another version of the talk at Javascript Israel](https://500tech.com/blog/all/yonatan-mevorach-on-abstract-syntax-trees) 
+* [Here are the slides](ast-talk-codemotion-170406094223.pdf)
 
 * <a href="https://astexplorer.net/" target="_blank">astexplorer.net demo</a>
 * <a href="https://eslint.org/docs/developer-guide/working-with-plugins" target="_blank">ESLint: Working with Plugins</a>
