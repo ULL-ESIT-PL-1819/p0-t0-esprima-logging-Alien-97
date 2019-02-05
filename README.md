@@ -12,6 +12,8 @@ talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-stat
 See also the video [Master the Art of the AST and Take Control of Your JS][ast].
 
 * <a href="https://astexplorer.net/" target="_blank">astexplorer.net demo</a>
+* <a href="https://eslint.org/docs/developer-guide/working-with-plugins" target="_blank">ESLint: Working with Plugins</a>
+* <a href="https://github.com/cowchimp/eslint-plugin-piggyback" target="_blank"eslint-plugin-piggyback</a>
 
 [ast]: https://youtu.be/C06MohLG_3s
 
