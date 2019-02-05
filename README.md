@@ -1,11 +1,18 @@
 ## About
 
-This repository contains code samples from my talk [Parsing, Compiling, and
+This repository contains code samples from the talk [Parsing, Compiling, and
 Static Metaprogramming][talk] at JSConfEU 2013. You can find [slides for the
 talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-static-metaprogramming).
-See also the video [Master the Art of the AST and Take Control of Your JS][ast].
+
 
 [talk]: http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html
+
+## Master the Art of the AST and Take Control of Your JS
+
+See also the video [Master the Art of the AST and Take Control of Your JS][ast].
+
+* <a href="https://astexplorer.net/" target="_blank">astexplorer.net demo</a>
+
 [ast]: https://youtu.be/C06MohLG_3s
 
 ### Esprima Examples
