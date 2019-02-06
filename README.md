@@ -7,7 +7,7 @@ Static Metaprogramming][talk] at JSConfEU 2013 by Patrick Dubroy.
     - You can find [slides for the talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-static-metaprogramming)
 2. [Master the Art of the AST and Take Control of Your JS][ast]  by Yonatan Mevorach. 
     - [Here are the slides](ast-talk-codemotion-170406094223.pdf)
-3. [Talk Javascript Israel](https://500tech.com/blog/all/yonatan-mevorach-on-abstract-syntax-trees) 
+3. [Talk on the same topic at Javascript Israel](https://500tech.com/blog/all/yonatan-mevorach-on-abstract-syntax-trees)  by Yonatan Mevorach
 
 [talk]: http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html
 
