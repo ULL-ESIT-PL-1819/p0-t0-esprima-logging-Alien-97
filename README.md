@@ -1,13 +1,17 @@
 ## About
 
-This repository contains code samples from the talk [Parsing, Compiling, and
-Static Metaprogramming][talk] at JSConfEU 2013. You can find [slides for the
-talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-static-metaprogramming).
+This repository contains code samples from the talks:
 
+1. [Parsing, Compiling, and
+Static Metaprogramming][talk] at JSConfEU 2013 by Patrick Dubroy. 
+    - You can find [slides for the talk on Speaker Deck](https://speakerdeck.com/pdubroy/parsing-compiling-and-static-metaprogramming)
+2. [Master the Art of the AST and Take Control of Your JS][ast]  by Yonatan Mevorach. 
+    - [Here are the slides](ast-talk-codemotion-170406094223.pdf)
+3. [Talk Javascript Israel](https://500tech.com/blog/all/yonatan-mevorach-on-abstract-syntax-trees) 
 
 [talk]: http://2013.jsconf.eu/speakers/patrick-dubroy-parsing-compiling-and-static-metaprogramming.html
 
-## Master the Art of the AST and Take Control of Your JS
+## Master the Art of the AST and Take Control of Your JS by Yonatan Mevorach
 
 * See also the video [Master the Art of the AST and Take Control of Your JS][ast]. 
 * [Here is another version of the talk at Javascript Israel](https://500tech.com/blog/all/yonatan-mevorach-on-abstract-syntax-trees) 
