@@ -22,7 +22,8 @@ function addBeforeCode(node) {
     node.body.body = beforeNodes.concat(node.body.body);
 }
 
-console.log(addLogging(`
+
+const input = `
 function foo(a, b) {   
   var x = 'blah';   
   var y = (function () {
@@ -30,4 +31,9 @@ function foo(a, b) {
   })();
 }     
 foo(1, 'wut', 3);
-`));
+`;
+
+const output = addLogging(input);
+
+console.log(`input:\n${input}\n---`);
+console.log(`output:\n${output}\n---`);
