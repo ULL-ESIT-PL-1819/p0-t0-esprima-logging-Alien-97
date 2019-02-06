@@ -24,8 +24,8 @@ function addBeforeCode(node) {
 
 const input = `
 function foo(a, b) {
-  let x = 'blah';
-  let y = (function () {
+  var x = 'blah';
+  var y = (function () {
     return 3;
   })();
 }
