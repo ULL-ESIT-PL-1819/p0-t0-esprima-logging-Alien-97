@@ -47,7 +47,7 @@ Static Metaprogramming][talk] at JSConfEU 2013 by Patrick Dubroy.
 * <a href="https://github.com/cowchimp/awesome-ast" target="_blank">A curated list of awesome AST resources</a>
 
 
-##  Talk [Parsing, Compiling, and Static Metaprogramming at JSConfEU 2013 by Patrick Dubroy. 
+##  Talk Parsing, Compiling, and Static Metaprogramming at JSConfEU 2013 by Patrick Dubroy. 
 
 ### Esprima Examples
 
