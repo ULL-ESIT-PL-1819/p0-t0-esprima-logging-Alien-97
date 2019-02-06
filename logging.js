@@ -1,5 +1,5 @@
 let escodegen = require('escodegen');
-let esprima = require('esprima');
+let esprima = require('espree');
 let estraverse = require('estraverse');
 
 function addLogging(code) {
@@ -18,7 +18,7 @@ function addLogging(code) {
 function addBeforeCode(node) {
     let name = node.id ? node.id.name : '<anonymous function>';
     let beforeCode = `console.log('Entering ${name}()');`;
-    let beforeNodes = esprima.parse(beforeCode).body;
+    let beforeNodes = esprima.parse(beforeCode).body; // Is an Array of ASTs
     node.body.body = beforeNodes.concat(node.body.body);
 }
 
