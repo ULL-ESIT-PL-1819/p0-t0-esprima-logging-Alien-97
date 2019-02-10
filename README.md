@@ -1,3 +1,5 @@
+Explicación código práctica esprima, fichero logging.js, se encuentra abajo
+
 ## About
 
 This repository contains code samples from the talks:
@@ -118,3 +120,60 @@ Script {
 undefined
 > 
 ```
+---------------------------------------------------------------------------------------------------------------------------
+## Explicación código logging.js
+
+* Este fichero contiene el código para el análisis de una cadena que recibe como entrada, esta cadena consiste en una función no anónima que contiene llamadas a funciones anónimas, el código en Javascript identifica dichas funciones y las muestra por pantalla.
+
+- A continuación se explica el cometido de las funciones implementadas:
+
+- let escodegen = require('escodegen');  Herramienta que genera el output
+- let esprima = require('esprima'); Parseador, genera los tokens a partir del input, y a partir de estos construye el Abstract Syntax Tree (AST)
+- let estraverse = require('estraverse'); Herramienta para recorrer un Abstract Syntax Tree, un árbol de 
+
+-------------------------------------------------------
+
+## addLogging(code)
+
+* Función que analiza el AST en busca de funciones anónimas y no anónimas
+function addLogging(code) { 
+    - let ast = esprima.parse(code); Parsea el código de entrada generando el Abstract Syntax Tree
+    - estraverse.traverse(ast, {  Se realiza el recorrido del árbol de sintaxis abstracto para clasificar los tokens, en este
+        - enter: function(node, parent) { Funcion anónima, recibe como parámetros el nodo que se analiza actualmente y su nodo padre
+            - if (node.type === 'FunctionDeclaration' ||  Se comprueba si el nodo contiene una función no anónima (FunctionDeclaration) o una función  anónima (FuntionExpression), si se cumple cualquiera de los dos casos, se invoca el método addBeforeCode, que muestra por pantalla el tipo de función 
+                node.type === 'FunctionExpression') { 
+                addBeforeCode(node); 
+            } 
+        }
+    });
+    - return escodegen.generate(ast); //Genera el código a partir del análisis del AST
+}
+
+## addBeforeCode(node)
+
+* Función que agrega los comentarios al input
+function addBeforeCode(node) {
+    - let name = node.id ? node.id.name : '<anonymous function>';  El identificador del nodo o token indica su nombre, si la función no tiene nombre, es decir, su id está a NULL, eso significa  que es anónima, de lo contrario, se considera no anónima.
+
+    - let beforeCode = `console.log('Entering ${name}()');`;  let es un tipo de variable que existe dentro del contexto léxico en el que se ha definido, en este caso, la función, se le podría llamar variable local, en este caso estamos mostrando el mensaje que indica si es una variable anónima o tiene un nombre, de acuerdo a lo especificado en la línea 153
+
+
+    - let beforeNodes = esprima.parse(beforeCode).body; 
+    node.body.body = beforeNodes.concat(node.body.body);
+}
+
+* const input = ` 
+function foo(a, b) {
+  var x = 'blah';
+  var y = (function ()  {
+    return 3;
+  })();
+}
+foo(1, 'wut', 3);
+`;
+
+* const output = addLogging(input); El output es el resultado de la ejecución de addLogging, que a su vez invoca a addBeforeCode como hemos explicado
+
+
+* console.log(`input:\n${input}\n---`); //  Se imprime por pantalla la cadena de entrada
+* console.log(`output:\n${output}\n---`);// Se imprime por pantalla la salida, que incluye las cadenas que indican el tipo de función.
